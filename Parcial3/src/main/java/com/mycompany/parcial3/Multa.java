@@ -1,16 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.parcial3;
 
-/**
- *
- * @author JHON
- */
 public class Multa {
-    public String fechInicio;
-    public String fechFin;
+    public int fechInicio;
+    public int fechFin;
     public Lector lectorMul;
     public Prestamo prestMult;
+
+    public Multa(int fechInicio, int fechFin, Lector lectorMul, Prestamo prestMult) {
+        this.fechInicio = fechInicio;
+        this.fechFin = fechFin;
+        this.lectorMul = lectorMul;
+        this.prestMult = prestMult;
+    }  
 }

@@ -1,17 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.parcial3;
 
-/**
- *
- * @author JHON
- */
 public class Prestamo {
-    public String fechaInicio;
-    public String fechaFin;
+    public int fechaInicio;
+    public int fechaFin;
     public Multa multaPrest;
     public Lector lectorPrest;
     public Copia copiaPrest;
+
+    public Prestamo(int fechaInicio, int fechaFin, Multa multaPrest, Lector lectorPrest, Copia copiaPrest) {
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.multaPrest = multaPrest;
+        this.lectorPrest = lectorPrest;
+        this.copiaPrest = copiaPrest;
+    }
+    
 }
